@@ -1,8 +1,31 @@
 aid: barinthus-biotherapeutics
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/barinthus-biotherapeutics.png
 name: Barinthus Biotherapeutics
-description: 'Barinthus Biotherapeutics is a company surfaced as a portfolio company of hongshan and added
-  to the API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Barinthus Biotherapeutics plc (Nasdaq: BRNS) is a clinical-stage
+  biopharmaceutical company developing novel immunotherapies designed to guide
+  and reprogram T cells to overcome autoimmunity, inflammatory disease, chronic
+  viral infection, and cancer. Its lead SNAP-TI and SNAP-CI antigen-specific
+  platforms and ChAdOx/MVA immunotherapeutic candidates power a five-program
+  pipeline including VTP-1000 (celiac disease), VTP-300 (chronic hepatitis B),
+  VTP-200 (high-risk HPV), VTP-850 (recurrent prostate cancer), and VTP-1100
+  (HPV-related cancer). The company was formed in 2021 through the merger of
+  Oxford University spinout Vaccitech plc and NIH/Johns Hopkins spinout Avidea
+  Technologies, and is headquartered in Germantown, Maryland with research
+  facilities in the UK. It was surfaced as a portfolio company of Hongshan and
+  added to the API Evangelist network. As a therapeutics company it publishes
+  no public developer API, SDK, or agent surface.
 url: https://raw.githubusercontent.com/api-evangelist/barinthus-biotherapeutics/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +35,44 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Healthcare
+- Biotechnology
+- Biopharmaceutical
+- Immunotherapy
+- Autoimmune
+- Oncology
+- Clinical Stage
+- Life Sciences
 apis: []
+common:
+- type: DomainSecurity
+  url: security/barinthus-biotherapeutics-domain-security.yml
+- type: Website
+  url: https://www.barinthusbio.com/
+- type: About
+  url: https://www.barinthusbio.com/about/
+- type: Pipeline
+  url: https://www.barinthusbio.com/pipeline/
+- type: Support
+  url: https://www.barinthusbio.com/contact/
+- type: News
+  url: https://investors.barinthusbio.com/news-filings/press-releases
+- type: Investors
+  url: https://investors.barinthusbio.com/
+- type: PrivacyPolicy
+  url: https://www.barinthusbio.com/data-protection-policy/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/barinthusbiotherapeutics
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
