@@ -2,19 +2,24 @@ generated: '2026-07-18'
 method: probed
 source: live probe of https://www.barinthusbio.com/.well-known/*
 host: https://www.barinthusbio.com
-documents:
-- path: /.well-known/security.txt
-  status: 404
-- path: /.well-known/openid-configuration
-  status: 404
-- path: /.well-known/oauth-authorization-server
-  status: 404
-- path: /.well-known/api-catalog
-  status: 404
-- path: /.well-known/ai-plugin.json
-  status: 404
-note: >-
-  No .well-known discovery surface published. Barinthus Biotherapeutics is a
-  clinical-stage biopharmaceutical company with a corporate/investor web
-  presence and no public developer API, so this is the expected result. Absence
-  recorded for audit; no WellKnown scoring pointer emitted.
+note: No .well-known discovery surface published. Barinthus Biotherapeutics is a clinical-stage biopharmaceutical
+  company with a corporate/investor web presence and no public developer API, so this is the expected
+  result. Absence recorded for audit; no WellKnown scoring pointer emitted.
+hosts:
+- host: https://www.barinthusbio.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
